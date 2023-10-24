@@ -4,7 +4,7 @@
 
 FROM alpine:3.16
 
-ENV STRONGSWAN_RELEASE https://download.strongswan.org/strongswan.tar.bz2
+ENV VERSION="5.9.11"
 
 RUN apk --update add build-base \
             ca-certificates \
@@ -16,7 +16,7 @@ RUN apk --update add build-base \
             openssl \
             openssl-dev && \
     mkdir -p /tmp/strongswan && \
-    curl -Lo /tmp/strongswan.tar.bz2 $STRONGSWAN_RELEASE && \
+    curl -Lo /tmp/strongswan.tar.bz2 https://download.strongswan.org/strongswan-$VERSION.tar.bz2 && \
     tar --strip-components=1 -C /tmp/strongswan -xjf /tmp/strongswan.tar.bz2 && \
     cd /tmp/strongswan && \
     ./configure --prefix=/usr \
