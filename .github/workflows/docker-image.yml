@@ -48,5 +48,5 @@ jobs:
             linux/amd64
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/amdiev2:latest
-            ${{ secrets.DOCKER_USERNAME }}/amdiev2:${{ env.app_version }}
+            ${{ secrets.DOCKER_USERNAME }}/amdiev:latest
+            ${{ secrets.DOCKER_USERNAME }}/amdiev:${{ env.app_version }}
