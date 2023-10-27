@@ -1,11 +1,4 @@
-# StrongSwan VPN + Alpine Linux
-
-This repository contains a Dockerfile for generating
-an image with [StrongSwan](https://www.strongswan.org/) and
-[Alpine Linux](https://alpinelinux.org/).
-
-This image can be used on the server or client in a variety
-of configurations.
+# StrongSwan
 
 The reference configuration in this repository and following
 guidelines are intended to provide an attempt at a
